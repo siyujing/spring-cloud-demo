@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/      # 指定服务注册中心的地址
+
+server:
+  port: 8769
+
+spring:
+  application:
+    name: boxfish4-cloud-zuul
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: BOXFISH2-CLOUD-RIBBON-HYSTRIX    # 以/api-a/ 开头的请求都转发给 BOXFISH2-CLOUD-RIBBON-HYSTRIX 服务
+    api-b:
+      path: /api-b/**
+      serviceId: BOXFISH3-CLOUD-FEIGN-HYSTRIX     # 以/api-b/开头的请求都转发给 BOXFISH3-CLOUD-FEIGN-HYSTRIX 服务
