@@ -8,4 +8,5 @@ eureka:
     hostname: peer2
   client:
     serviceUrl:
+#    指定服务地址
       defaultZone: http://peer1:8761/eureka/

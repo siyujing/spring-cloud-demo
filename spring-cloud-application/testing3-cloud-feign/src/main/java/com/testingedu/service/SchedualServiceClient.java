@@ -5,9 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-/**
- * Created by boxfish on 17/10/27.
- */
 @FeignClient(value = "boxfish1-cloud-eureka-client")
 public interface SchedualServiceClient {
 
