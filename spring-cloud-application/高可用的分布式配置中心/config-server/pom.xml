@@ -10,7 +10,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>config-eureka</artifactId>
+    <artifactId>config-server</artifactId>
     <version>5.0</version>
 
     <name>config-server</name>

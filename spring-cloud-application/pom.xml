@@ -23,16 +23,18 @@
     <module>testing1-cloud-eureka</module>
     <module>testing1-cloud-eureka-client</module>
     <module>testing2-cloud-ribbon</module>
-    <module>testing3-cloud-feign</module>
     <module>testing2-cloud-ribbon-hystrix</module>
     <module>testing2-cloud-ribbon-hystrix-dashboard</module>
+    <module>testing3-cloud-feign</module>
     <module>testing3-cloud-feign-hystrix</module>
+    <module>testing3-cloud-feign-hystrix-dashboard</module>
+    <module>testing4-cloud-zuul</module>
     <module>testing5-cloud-config</module>
     <module>testing5-cloud-config-client</module>
     <module>高可用的分布式配置中心/config-eureka</module>
     <module>高可用的分布式配置中心/config-server</module>
     <module>高可用的分布式配置中心/config-client</module>
-    <module>docker部署/eureka-server</module>
+    <!--<module>docker部署/eureka-server</module>-->
     <module>testing0-test</module>
     <module>服务链路追踪(spring-cloud-sleuth)/server-zipkin</module>
     <module>服务链路追踪(spring-cloud-sleuth)/service-hi</module>
@@ -43,6 +45,7 @@
     <java.version>1.8</java.version>
 
     <spring.boot.version>1.4.0.RELEASE</spring.boot.version>
+
     <spring.cloud.version>Brixton.SR6</spring.cloud.version>
 
     <maven.compiler.source>${java.version}</maven.compiler.source>
