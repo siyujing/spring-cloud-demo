@@ -4,9 +4,6 @@ import com.testingedu.service.SchedualServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * Created by boxfish on 17/10/30.
- */
 @RestController
 public class HiController {
 
