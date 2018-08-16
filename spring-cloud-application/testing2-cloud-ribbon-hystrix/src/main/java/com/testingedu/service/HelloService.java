@@ -17,7 +17,7 @@ public class HelloService {
 // @HystrixCommand 该注解对该方法创建了熔断器的功能，并指定了fallbackMethod熔断方法，熔断方法直接返回了一个字符串，字符串为”hi,”+name+”,sorry,error!”
     @HystrixCommand(fallbackMethod = "clientError")
     public String clientService(String name){
-        return restTemplate.getForObject("http://boxfish1-cloud-eureka-client/hi?name="+name,String.class);
+        return restTemplate.getForObject("http://testing1-cloud-eureka-client/hi?name="+name,String.class);
     }
 
     public String clientError(String name){
