@@ -7,6 +7,9 @@ eureka:
   instance:
     hostname: peer2
   client:
+    registerWithEureka: false
+    fetchRegistry: false
+
     serviceUrl:
 #    指定服务地址
       defaultZone: http://peer1:8761/eureka/
