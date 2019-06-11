@@ -2,7 +2,11 @@ server:
   port: 8769
 
 spring:
-  profiles: peer2
+  profiles:
+    active: peer2
+---
+spring.profiles: peer2
+
 eureka:
   instance:
     hostname: peer2

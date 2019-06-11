@@ -13,8 +13,8 @@ import zipkin.server.EnableZipkinServer;
 
  方法二 下载地址：
  https://dl.bintray.com/openzipkin/maven/io/zipkin/java/zipkin-server/
- 方法二下载完成后运行jar包：java -jar zipkin-server-2.10.1-exec.jar
- 访问浏览器localhost:9494
+ 方法二下载完成后运行jar包,在jar 包路径下执行：java -jar zipkin-server-2.10.1-exec.jar
+ 访问浏览器localhost:9411
 
  * */
 @SpringBootApplication

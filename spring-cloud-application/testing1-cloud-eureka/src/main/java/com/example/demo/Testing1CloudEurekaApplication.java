@@ -20,6 +20,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  * Eureka-server peer1 8761,Eureka-eserver peer2 8769相互感应，当有服务注册时，
  * 两个Eureka-server是对等的，它们都存有相同的信息，这就是通过服务器的冗余来增加可靠性，当有一台服务器宕机了，服务并不会终止，因为另一台服务存有相同的数据。
  *
+ * 测试：启动一个服务（testing1-cloud-eureka-client）注册到8761 或者8769 中任意一个服务，可以看到两个eureka 中都有这个新注册的服务。
  */
 @EnableEurekaServer
 @SpringBootApplication

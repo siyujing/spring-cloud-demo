@@ -1,10 +1,16 @@
+spring.application.name: testing1-cloud-eureka
 server:
   port: 8761
 
-spring.profiles.active: standalone
+spring.profiles.active: pro
+
+logging:
+  file: ${user.home}/logs/${HOSTNAME:springcloud}/${spring.application.name}.log
+  level:
+    org.springframework: INFO
 
 ---
-spring.profiles: standalone
+spring.profiles: pro
 
 eureka:
   environment: ${spring.profiles.active}      # 设置 eureka 使用的环境名
@@ -15,9 +21,9 @@ eureka:
     enable-self-preservation: false
 
   client:
-  # 通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
     registerWithEureka: false
     fetchRegistry: false
+  # 通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
   # 配置 eureka 服务地址
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
